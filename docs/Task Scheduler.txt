@@ -1,8 +1,8 @@
 Task scheduler basic operation:
 
 Prerequisites:
-- Windows 10 Operating System
-- Task Scheduler application installed in the system
+- Operating system: Windows 10 Pro, version 1803
+- Task Scheduler application pre-installed in the system
 
 Procedure to set a trigger:
 - Open the "task scheduler" application.
@@ -13,3 +13,5 @@ Procedure to set a trigger:
 - Set up the desired trigger according to the options provided.
 - The logs of the triggers can be viewed in the "Task Status" pane.
 
+For more details, visit: 
+https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page
