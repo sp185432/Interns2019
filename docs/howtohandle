@@ -7,5 +7,6 @@ Procedure to set a trigger:
 - Set up the desired trigger according to the options provided.
 - The logs of the triggers can be viewed in the "Task Status" pane.
 
+
 For more details, visit: 
 https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page

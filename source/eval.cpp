@@ -310,6 +310,7 @@ void single_llist::displayrev(node* temp){
         return;
     }
     displayrev(temp->next);
+    
     cout<<temp->info<<"->";
 }
 	

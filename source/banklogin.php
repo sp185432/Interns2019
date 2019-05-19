@@ -53,6 +53,7 @@ if(isset($_REQUEST['submitBtn'])){
         $_SESSION['bank']=$rws["name"];
     header('location:bank_homepage.php'); 
     }
+    
     else
         header('location:banklogin.php');
         
