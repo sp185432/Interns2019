@@ -1,0 +1,11 @@
+Procedure to set a trigger:
+- Open the "task scheduler" application.
+- On the leftmost pane double click on the "Task Scheduler Library" option.
+- On the rightmost "Actions" pane, select "New Folder" option. Give a name to your folder and click "OK". This folder will be created under the "Task Scheduler Library" dropdown.
+- Double click on your folder, and on the rightmost "Actions" pane, select "Create Basic Task" option.
+- In the pop-up window give a name and description to the task and click "Next".
+- Set up the desired trigger according to the options provided.
+- The logs of the triggers can be viewed in the "Task Status" pane.
+
+For more details, visit: 
+https://docs.microsoft.com/en-us/windows/desktop/taskschd/task-scheduler-start-page
