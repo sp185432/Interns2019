@@ -1,6 +1,9 @@
 Operating System:
 - Windows 10 Pro, version 1803
 
+Install Xampp
+configure apache and mysql
+
 Compiler: 
 - Supports Dev-Cpp 5.11 TDM-GCC 4.9.2 
 
