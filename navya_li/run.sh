@@ -1,0 +1,3 @@
+cd debug
+./realCalculatorString
+cd ..
