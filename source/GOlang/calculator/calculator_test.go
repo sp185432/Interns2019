@@ -1,6 +1,13 @@
 package arithmetic
 
-import "testing"
+import (
+	"fmt"
+	"io"
+	"io/ioutil"
+	"net/http"
+	"net/http/httptest"
+	"testing"
+)
 
 /*
 ------BASIC TEST-------
@@ -116,5 +123,26 @@ func BenchmarkMultiplication(b *testing.B) {
 func BenchmarkDivision(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Division(12, 2)
+	}
+}
+
+func TestHttpRequest(t *testing.T) {
+	handler := func(w http.ResponseWriter, r *http.Request) {
+		io.WriteString(w, "{\"status\": \"good\"}") //JSON response
+	}
+
+	//req := httptest.NewRequest("GET", "https://www.google.com", nil)
+	req := httptest.NewRequest("GET", "https://a_bsdewhfc/com", nil)
+
+	w := httptest.NewRecorder()
+	handler(w, req)
+
+	resp := w.Result() //response
+	body, _ := ioutil.ReadAll(resp.Body)
+
+	fmt.Println(string(body))
+	fmt.Println("Status code is: ", resp.StatusCode)
+	if 200 != resp.StatusCode {
+		t.Fatal("Status code not ok")
 	}
 }
