@@ -1,0 +1,19 @@
+DOCUMENT:
+OS: darwin
+Platform: darwin
+->I have intsalled the package "github.com/shirou/gopsutil/" where in which it provided the required packages.
+
+->For CPU utilization I used "github.com/shirou/gopsutil/cpu" these package where in which we have "cpupercent" to 
+find out the cpu utilization details
+->For Memory utilization I used "github.com/shirou/gopsutil/disk" these package where in which we have "vmStat.Total" to 
+find out the Memory utilization details
+->For IP Details I used "github.com/shirou/gopsutil/net" these package where in which we have " addr.String()" to 
+find out the IP details
+->For host details I used "github.com/shirou/gopsutil/host" these package where in which we have "cpupercent" to 
+find out the cpu utilization details
+net -- For ip Address
+host-- For Host details
+cpu-- For CPU utilizzation
+Memory-- For Memory Utilization details
+disk -- For Disk Utility details
+the above 5 are the packages which i have used.
