@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"D:/NAVYA/DevOps/Interns2019/vagrant_LI","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
