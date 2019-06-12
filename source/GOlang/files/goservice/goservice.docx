@@ -1,0 +1,40 @@
+Program Name: goservice.go
+
+Description:
+- This program runs an executable file as an OS service.
+- It uses command line arguments to specify the operation to be performed.
+
+Points to remember:
+- Specify the correct path of the executable in the program.
+- The command prompt must be logged in as "administrator" for full permissions.
+- Full access permissions must be given to all the users and administrators of the system. For this, right click on the executable and go to properties. Go to "security" tab and click "edit" option. Give access to all permissions.
+
+
+System configurations:
+
+Operating System:
+- Windows 10 Pro, version 1803
+
+Compiler: 
+- golang (go1.12.5 windows/amd64)
+
+
+- Set the system environment variables paths.
+GoRoot: The bin folder path of golang
+GoPath: The path where go files are placed
+
+
+For build: 
+- Download source code.
+- Use the command "go build programname.go".
+- A "programname.exe" file is generated in the same folder. 
+
+For execution: 
+- Download "programname.exe" file into the system.
+- Use "./programname.exe <operation>" command to run.
+For example- ./programname.exe install
+
+Shortcut for execution:
+- Download source code.
+- Use "go run programname.go <operation>" command to directly run the code.
+For example- go run programname.go install
