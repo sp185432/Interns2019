@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	
 	"sort"
 	"strconv"
 	"strings"
 	"time"
-
 	"github.com/inancgumus/screen"
 )
 
@@ -40,10 +40,13 @@ func main() {
 		fmt.Println("\nHow many rounds do each one of you want to play?")
 		fmt.Scan(&noofrounds)
 
+		//giving each player certain points before itself based on noofrounds they want to play
 		points1 := 100 * noofrounds
 		points2 := 100 * noofrounds
 
-		fmt.Println("\n\t\t NOTE: Please enter valid words as input strings")
+		//printing few rules and also the points credited to players
+		fmt.Println("\n\t\t NOTE: Please enter meaningful words as input strings")
+		fmt.Println("\n\t\t NOTE: TIME IS ALSO RECORDED. GUESS THE WORD SOON!")
 		fmt.Println("\n\t\tInitially points that both the players have are!!")
 		fmt.Println("\n\t\t Player 1\t\t\t\t\t Player 2")
 		fmt.Println("\t\t", strings.ToUpper(name1), "\t\t\t\t\t", strings.ToUpper(name2))
@@ -90,10 +93,15 @@ func main() {
 
 			fmt.Scan(&Userstring)
 
-			for k := 0; k < 10; k++ {
-				screen.Clear()
-			}
+			//clearingScreen()
 
+			screen.Clear()
+
+			screen.Clear()
+
+			screen.Clear()
+
+			//calling the function rearrage which will rearrange the string entered by one player
 			output = ReArrange(Userstring)
 
 			fmt.Println("\n\t\tThe string entered by player", active, " is rearranged as: ")
@@ -120,14 +128,18 @@ func main() {
 				fmt.Println("\t\t=========================================================")
 				fmt.Println("\n\t\tPlayer ", inactive, ": Attempt---", i)
 
+				//recording the time taken by user to enter a string(starting point)
 				t0 := time.Now()
 
 				fmt.Scan(&guessword)
 
+				//records the end point
 				t1 := time.Now()
 
+				//difference of two times which gives the time taken by user to enter a input
 				t2 := t1.Sub(t0)
 
+				//calling the function comparestring
 				comparestring = CompareString(guessword, Userstring)
 
 				if comparestring == 0 {
@@ -176,6 +188,7 @@ func main() {
 				}
 			}
 
+			//giving the second player chnace to play in that round
 			choiceStart = strconv.Itoa(inactive)
 
 			count1++
@@ -331,3 +344,10 @@ func ReArrange(Userstring string) string {
 
 	return justString
 }
+
+/*func clearingScreen() {
+
+	screen.Clear()
+	fmt.Println("Hello World!")
+
+}*/
