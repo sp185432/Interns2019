@@ -1,0 +1,35 @@
+Program Name: copyservers.go
+
+Description:
+- This program copies files in a directory from one server to another server.
+
+Points to remember:
+- The folders that are copied must be given full share permissions.
+
+
+System configurations:
+
+Operating System:
+- Windows 10 Pro, version 1803
+
+Compiler: 
+- golang (go1.12.5 windows/amd64)
+
+
+- Set the system environment variables paths.
+GoRoot: The bin folder path of golang
+GoPath: The path where go files are placed
+
+
+For build: 
+- Download source code.
+- Use the command "go build programname.go".
+- A "programname.exe" file is generated in the same folder. 
+
+For execution: 
+- Download "programname.exe" file into the system.
+- Use "./programname.exe" command to run.
+
+Shortcut for execution:
+- Download source code.
+- Use "go run programname.go" command to directly run the code.
