@@ -2,7 +2,7 @@ Program Name: countword.go
 
 Description:
 - This program is used to count the number of repetitions of a specified word in a file.
-- If the count is greater than 3, an OS service is restarted and a task is scheduled to send a message to the user.
+- If the count is greater than 3, an OS service is restarted and a message is sent to the user.
 - It uses command line arguments to specify the service operation to be performed.
 
 Points to remember:
