@@ -1,0 +1,24 @@
+System configurations:
+
+Operating System:
+- Windows 10 Pro, version 1803
+
+Compiler: 
+- Supports Dev-Cpp 5.11 TDM-GCC 4.9.2 
+
+- Set the system environment variables paths.
+For example:
+C:\Program Files (x86)\Dev-Cpp\MinGW64\bin
+C:\Program Files (x86)\Dev-Cpp\MinGW64\libexec\gcc\x86_64-w64-mingw32\4.9.2
+C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\bin
+
+
+For build: 
+- Download source code and "compile.bat" file.
+- Replace the program names/ files names in "compile.bat" file with your source codes/files names.
+- Replace the paths in the file with your local system path where the files are downloaded.
+- Build status can be checked in "compileLOG.log" file.
+
+For deployment: 
+- Download "run.bat" file and "debug" folders.
+- Deploymet status can be checked in "runLOG.log" file.

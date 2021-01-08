@@ -1,0 +1,39 @@
+Program Name: updatefile.go
+
+Description:
+- This program updates the file, that is, it opens and adds additional content to an existing file in the file system.
+- Extra data can be added into the file.
+- Data can be read from the file.
+
+Points to remember:
+- While entering data into the file, make sure that it ends with '#' symbol for program compatibility.
+- Blank spaces are not accepted as file names.
+- If the file does not exist in the file system, it throws an error.
+
+
+System configurations:
+
+Operating System:
+- Windows 10 Pro, version 1803
+
+Compiler: 
+- golang (go1.12.5 windows/amd64)
+
+
+- Set the system environment variables paths.
+GoRoot: The bin folder path of golang
+GoPath: The path where go files are placed
+
+
+For build: 
+- Download source code.
+- Use the command "go build programname.go".
+- A "programname.exe" file is generated in the same folder. 
+
+For execution: 
+- Download "programname.exe" file into the system.
+- Use "./programname.exe" command to run.
+
+Shortcut for execution:
+- Download source code.
+- Use "go run programname.go" command to directly run the code.
